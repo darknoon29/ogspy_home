@@ -1,0 +1,19 @@
+{
+  "name": "home.ogspy.fr",
+  "version": "0.0.1",
+  "description": "Homepage for OGSpy.fr Site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "ogspy"
+  ],
+  "author": "Darknoon",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery-slim": "^3.0.0"
+  }
+}
