@@ -77,10 +77,9 @@ body {
 
 .page-banner {
   position: relative;
-  width: min(100%, 980px);
+  width: min(100%, 784px);
   margin: 0 auto;
   aspect-ratio: 1200 / 630;
-  height: auto;
   overflow: hidden;
   border: 1px solid rgba(255, 145, 77, 0.18);
   border-radius: calc(var(--bs-border-radius-xl) * 1.2);
@@ -111,20 +110,6 @@ body {
   background:
     linear-gradient(180deg, rgba(8, 13, 28, 0.06) 0%, rgba(8, 13, 28, 0.42) 100%),
     linear-gradient(90deg, rgba(12, 17, 32, 0.34) 0%, rgba(12, 17, 32, 0.08) 52%, rgba(224, 96, 16, 0.14) 100%);
-}
-
-.page-banner__label {
-  position: absolute;
-  left: 1.4rem;
-  bottom: 1.15rem;
-  padding: 0.45rem 0.8rem;
-  border: 1px solid rgba(255, 145, 77, 0.2);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
 }
 
 .surface-card {
@@ -271,5 +256,31 @@ section#newsletter {
   .hero-block::after {
     width: 12rem;
     height: 12rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-banner-wrap {
+    padding-top: 0;
+  }
+
+  .page-banner {
+    aspect-ratio: unset;
+    height: clamp(200px, calc(100vh - 750px), 411px);
+  }
+
+  .page-main {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .hero-block {
+    padding: 1.75rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .newsletter-side,
+  .newsletter-form-panel {
+    padding: 1.5rem !important;
   }
 }
